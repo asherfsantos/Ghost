@@ -9,7 +9,7 @@ public class PlayerMovements : MonoBehaviour
 	public bool playerInPortal;
 	public Sprite spiritSprite;
 	public SpriteRenderer playerRenderer;
-	public bool isInRealWorld = true;
+	public bool isLiving = true;
 	public bool facingRight = true;
 	public Rigidbody2D playerLiveForm;
 	public GameObject playerSpiritForm;
@@ -55,9 +55,7 @@ public class PlayerMovements : MonoBehaviour
 	{	
 		if(other.gameObject.CompareTag("Doorway"))
 		{
-			isInRealWorld = !isInRealWorld;
-			//Switch worlds
-			//GameObject.Destroy(player);
+			GameObject.Destroy(player);
 		}
 	}
 

@@ -113,68 +113,82 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &435658683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 435658684}
-  - component: {fileID: 435658686}
-  - component: {fileID: 435658685}
-  m_Layer: 0
-  m_Name: Doorway (3)
-  m_TagString: Doorway
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &435658684
+--- !u!4 &183726120 stripped
 Transform:
+  m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
+    type: 2}
+  m_PrefabInternal: {fileID: 423752633}
+--- !u!4 &310267624 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1679779602}
+--- !u!1001 &423752633
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435658683}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.004981041, y: 0.43735394, z: 0.020870239}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1556796008}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &435658685
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435658683}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 7.88, y: 1.92}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 2.3}
-  m_EdgeRadius: 0
---- !u!33 &435658686
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435658683}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Modification:
+    m_TransformParent: {fileID: 1361718567}
+    m_Modifications:
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.1242219
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.2041135
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.2041135
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.20411342
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652228202486406, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_Name
+      value: Doorway (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652228202486406, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,91 +262,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &560220855 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1963457055397412, guid: dbb1646f0e3beb54bb1ca58905b2598f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1981687791}
---- !u!114 &560220861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 560220855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: def2444d75a4f3c40a56ee1362ded80d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  realWorldHealth: 3
-  spiritWorldHealth: 1
 --- !u!95 &704649361 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95276066127152904, guid: dbb1646f0e3beb54bb1ca58905b2598f,
     type: 2}
   m_PrefabInternal: {fileID: 1981687791}
---- !u!1 &845959508
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 845959509}
-  - component: {fileID: 845959511}
-  - component: {fileID: 845959510}
-  m_Layer: 0
-  m_Name: Doorway
-  m_TagString: Doorway
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &845959509
+--- !u!4 &736800898 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 845959508}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.004981041, y: 0.43735394, z: 0.020870239}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1556796008}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &845959510
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 845959508}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.77, y: 3.4}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.05, y: 0.1}
-  m_EdgeRadius: 0
---- !u!33 &845959511
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 845959508}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1205912152}
 --- !u!1 &1013318171
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +304,7 @@ GameObject:
   - component: {fileID: 1013318185}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Wall
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -954,6 +893,7 @@ BoxCollider2D:
   m_Size: {x: 1.9, y: 0.1}
   m_EdgeRadius: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1149561612
 GameObject:
 =======
@@ -1083,196 +1023,114 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1149561614
 BoxCollider2D:
+=======
+--- !u!1001 &1205912152
+Prefab:
+>>>>>>> parent of c534934... edited doorways
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149561612}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 6.21, y: -3.07}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7, y: 0.1}
-  m_EdgeRadius: 0
---- !u!33 &1149561615
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149561612}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1191061691
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1191061692}
-  - component: {fileID: 1191061694}
-  - component: {fileID: 1191061693}
-  m_Layer: 0
-  m_Name: Doorway (4)
-  m_TagString: Doorway
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1191061692
+  m_Modification:
+    m_TransformParent: {fileID: 1361718567}
+    m_Modifications:
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.885
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.1242219
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.2734729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.2734729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.2734729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652228202486406, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1258542705 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191061691}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.004981041, y: 0.43735394, z: 0.020870239}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1556796008}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1191061693
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191061691}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.7, y: -0.62}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 2.4}
-  m_EdgeRadius: 0
---- !u!33 &1191061694
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191061691}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1217426227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1217426228}
-  - component: {fileID: 1217426230}
-  - component: {fileID: 1217426229}
-  m_Layer: 0
-  m_Name: Doorway (2)
-  m_TagString: Doorway
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1217426228
+  m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1490557350}
+--- !u!4 &1262522660 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1217426227}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.004981041, y: 0.43735394, z: 0.020870239}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1556796008}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1217426229
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1217426227}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.98, y: -3.07}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.67, y: 0.1}
-  m_EdgeRadius: 0
---- !u!33 &1217426230
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1217426227}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1556796007
+  m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1583591066}
+--- !u!1 &1361718566
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1556796008}
+  - component: {fileID: 1361718567}
   m_Layer: 0
   m_Name: Doorways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &1556796008
+--- !u!4 &1361718567
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1556796007}
+  m_GameObject: {fileID: 1361718566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2704692, y: -0.37020767, z: 0.17204875}
+  m_LocalPosition: {x: -7.3554444, y: -1.3912805, z: 0.0732219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 845959509}
-  - {fileID: 1149561613}
-  - {fileID: 1217426228}
-  - {fileID: 435658684}
-  - {fileID: 1191061692}
-  - {fileID: 1918836510}
+  - {fileID: 736800898}
+  - {fileID: 1258542705}
+  - {fileID: 1262522660}
+  - {fileID: 183726120}
+  - {fileID: 310267624}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c534934... edited doorways
 --- !u!1001 &1490557350
 Prefab:
   m_ObjectHideFlags: 0
@@ -1401,6 +1259,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 --- !u!1 &1647018449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1353,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of c534934... edited doorways
 --- !u!1001 &1679779602
 Prefab:
   m_ObjectHideFlags: 0
@@ -1560,7 +1421,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67fb4897a946dbb4e8b05b91593a4f63, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> parent of c534934... edited doorways
 --- !u!1 &1681524499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,70 +1469,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1918836509
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1918836510}
-  - component: {fileID: 1918836512}
-  - component: {fileID: 1918836511}
-  m_Layer: 0
-  m_Name: Doorway (5)
-  m_TagString: Doorway
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1918836510
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1918836509}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.004981041, y: 0.43735394, z: 0.020870239}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1556796008}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1918836511
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1918836509}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.76, y: 3.4}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.04, y: 0.1}
-  m_EdgeRadius: 0
---- !u!33 &1918836512
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1918836509}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1981687791
 Prefab:
   m_ObjectHideFlags: 0
@@ -1734,11 +1536,6 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 704649361}
-    - target: {fileID: 50046815270576760, guid: dbb1646f0e3beb54bb1ca58905b2598f,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbb1646f0e3beb54bb1ca58905b2598f, type: 2}
   m_IsPrefabParent: 0
@@ -1814,5 +1611,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
