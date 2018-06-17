@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Portal
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -39,11 +40,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Background
     uniqueID: 1661874073
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Portals
     uniqueID: 2649729037
