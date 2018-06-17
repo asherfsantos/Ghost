@@ -32,7 +32,7 @@ public class EnemySpawns : MonoBehaviour
 			randomY = Random.Range(-2.5f, 3.0f);
 			while ( (Mathf.Abs (prevSpawnLocation.x - randomX) < minSpaceBetween) || (Mathf.Abs (prevSpawnLocation.y - randomY)) < minSpaceBetween)
 			{
-				randomX = Random.Range(-0.5f, 5.0f);
+				randomX = Random.Range(-5.5f, 5.0f);
 				randomY = Random.Range(-2.5f, 3.0f);
 			}
 			spawnLocation = new Vector2(randomX, randomY);
