@@ -57,6 +57,11 @@ public class PlayerMovements : MonoBehaviour
 		if(other.gameObject.CompareTag("Doorway"))
 		{
 			isInRealWolrd = !isInRealWolrd;
+			GameObject thePlayer = GameObject.Find("Player");
+			PlayerManager playerScript = thePlayer.GetComponent<PlayerManager>();
+			while(playerScript.realWorldHealth < 3)
+        		playerScript.realWorldHealth++;
+			
 			//GameObject.Destroy(player);
 		}
 	}
