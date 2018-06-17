@@ -23,7 +23,7 @@ public class PlayerMovements : MonoBehaviour
 	{
 		float moveHorizontal = Input.GetAxis("Horizontal");
 		float moveVertical = Input.GetAxis("Vertical");
-		transform.Translate(new Vector3(moveHorizontal, moveVertical)* Time.deltaTime * speed);
+		transform.Translate(new Vector3(moveHorizontal, moveVertical) * Time.deltaTime * speed);
 		if(moveHorizontal > 0 && !facingRight)
            	Flip();
         else if(moveHorizontal < 0 && facingRight)
