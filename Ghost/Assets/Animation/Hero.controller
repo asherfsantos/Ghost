@@ -7,6 +7,10 @@ AnimatorController:
   m_PrefabInternal: {fileID: 0}
   m_Name: Hero
   serializedVersion: 5
+<<<<<<< HEAD
+  m_AnimatorParameters: []
+  m_AnimatorLayers: []
+=======
   m_AnimatorParameters:
   - m_Name: Speed
     m_Type: 1
@@ -285,3 +289,4 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 828, y: 240, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102625373577787462}
+>>>>>>> master
