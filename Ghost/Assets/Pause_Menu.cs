@@ -30,10 +30,31 @@ public class Pause_Menu : MonoBehaviour {
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
+
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void ResumeGame()
+    {
+        Debug.Log("Resuming Game");
+    }
+
+    public void Options()
+    {
+        Debug.Log("Opening Options");
+    }
+
+    public void MainMenu()
+    {
+        Debug.Log("Exiting to Main Menu");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Exiting to Desktop");
     }
 }
