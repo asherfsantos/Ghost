@@ -9,7 +9,8 @@ public class PlayerMovements : MonoBehaviour
 	public bool playerInPortal;
 	public Sprite spiritSprite;
 	public SpriteRenderer playerRenderer;
-	public int collissions = 0;
+	public bool isLiving = true;
+	
 
 	void Start () 
 	{
@@ -30,11 +31,19 @@ public class PlayerMovements : MonoBehaviour
 		
 	}
 
-	void onTriggerEnter2D(Collider2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.gameObject.CompareTag("Portal"))
 		{
-			collissions ++;
+			isLiving = !isLiving;
+			if(isLiving)
+			{
+				//living animation
+			}
+			else if(!isLiving)
+			{
+				//spirit animation
+			}
 		}
 	}
 }
