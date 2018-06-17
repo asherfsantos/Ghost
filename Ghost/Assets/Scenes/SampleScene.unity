@@ -262,6 +262,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &704649361 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95276066127152904, guid: dbb1646f0e3beb54bb1ca58905b2598f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1981687791}
 --- !u!4 &736800898 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4100739007543080, guid: 67fb4897a946dbb4e8b05b91593a4f63,
@@ -1283,6 +1288,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95276066127152904, guid: dbb1646f0e3beb54bb1ca58905b2598f,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 99a3c7f66f444614ba2cd0de75a27298, type: 2}
+    - target: {fileID: 114590750328855976, guid: dbb1646f0e3beb54bb1ca58905b2598f,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 704649361}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dbb1646f0e3beb54bb1ca58905b2598f, type: 2}
   m_IsPrefabParent: 0

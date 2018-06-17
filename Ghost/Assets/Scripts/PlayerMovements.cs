@@ -14,12 +14,15 @@ public class PlayerMovements : MonoBehaviour
 	public Rigidbody2D playerLiveForm;
 	public GameObject playerSpiritForm;
 	public Vector2 currentPosition;
+	public Animator anim;
+	private bool attack;
+	private Animator myAnimator;
 	
-
 	void Start () 
 	{
 		player = GetComponent<Rigidbody2D>();
 		playerRenderer = player.GetComponent<SpriteRenderer>();
+		myAnimator = GetComponent<Animator>();
 	}
 	
 	void FixedUpdate()
@@ -31,11 +34,21 @@ public class PlayerMovements : MonoBehaviour
            	Flip();
         else if(moveHorizontal < 0 && facingRight)
            	Flip();
+
+		HandleInput();
+		
 	}
 
 	void Update () 
 	{
-		
+		//tell the animator which animation to play
+		float horizontal = Input.GetAxisRaw ("Horizontal");
+		float vertical = Input.GetAxisRaw ("Vertical");
+		anim.SetFloat ("Speed", Mathf.Abs (horizontal) + Mathf.Abs (vertical));
+
+		//triggers attack
+		HandleAttacks();
+		ResetValues();
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -53,4 +66,26 @@ public class PlayerMovements : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+	
+	private void HandleAttacks()
+	{
+		if (attack)
+		{
+			myAnimator.SetTrigger("Attack");
+		}
+	}
+
+	private void HandleInput()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			attack = true;
+		}
+	}
+
+	private void ResetValues()
+	{
+		attack = false;
+	}
+
 }
