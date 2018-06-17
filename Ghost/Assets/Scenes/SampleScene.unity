@@ -1736,6 +1736,7 @@ MonoBehaviour:
   spawnRate: 7
   nextSpawn: 0
   minSpaceBetween: 1
+  spawnActive: 1
 --- !u!4 &1681524501
 Transform:
   m_ObjectHideFlags: 0

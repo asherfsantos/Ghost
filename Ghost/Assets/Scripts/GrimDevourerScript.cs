@@ -7,6 +7,8 @@ public class GrimDevourerScript : EnemyBase {
     #region Public Variables
     public float shootIntervalTime = 3f;
     public GameObject projectile;
+    public Animator anim;
+    public bool attackActive = true;
     #endregion
 
     #region Private Variables
@@ -28,11 +30,14 @@ public class GrimDevourerScript : EnemyBase {
 
     private void Shoot()
     {
-        timer += Time.deltaTime;
-        if(timer > shootIntervalTime)
+        if(attackActive == true)
         {
-            timer = 0;
-            SpawnProjectile();
+            timer += Time.deltaTime;
+            if(timer > shootIntervalTime)
+            {
+                timer = 0;
+                SpawnProjectile();
+            }
         }
     }
     private void SpawnProjectile()
