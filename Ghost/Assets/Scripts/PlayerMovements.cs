@@ -11,6 +11,9 @@ public class PlayerMovements : MonoBehaviour
 	public SpriteRenderer playerRenderer;
 	public bool isLiving = true;
 	public bool facingRight = true;
+	public Rigidbody2D playerLiveForm;
+	public GameObject playerSpiritForm;
+	public Vector2 currentPosition;
 	
 
 	void Start () 
@@ -36,18 +39,10 @@ public class PlayerMovements : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
-	{
-		if(other.gameObject.CompareTag("Portal"))
+	{	
+		if(other.gameObject.CompareTag("Doorway"))
 		{
-			isLiving = !isLiving;
-			if(isLiving)
-			{
-				//living animation
-			}
-			else if(!isLiving)
-			{
-				//spirit animation
-			}
+			GameObject.Destroy(player);
 		}
 	}
 

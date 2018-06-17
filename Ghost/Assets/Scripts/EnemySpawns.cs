@@ -25,6 +25,11 @@ public class EnemySpawns : MonoBehaviour
 	
 	void Update () 
 	{
+		SpawnEnemies();
+	}
+	
+	void SpawnEnemies()
+	{
 		if(Time.time > nextSpawn)
 		{
 			nextSpawn = Time.time + spawnRate;
