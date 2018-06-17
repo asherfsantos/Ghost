@@ -10,6 +10,8 @@ TagManager:
   - Projectile
   - Wall
   - Doorway
+  - Spawn Portal
+  - RealEnemy
   layers:
   - Default
   - TransparentFX

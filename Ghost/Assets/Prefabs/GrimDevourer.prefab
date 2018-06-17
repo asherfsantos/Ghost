@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114858547051238282}
   m_Layer: 0
   m_Name: GrimDevourer
-  m_TagString: Untagged
+  m_TagString: RealEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,8 @@ MonoBehaviour:
   movementSpeed: 1
   shootIntervalTime: 3
   projectile: {fileID: 1316073773090124, guid: a625cb733f27bba41889036cc8e319af, type: 2}
+  anim: {fileID: 0}
+  attackActive: 1
 --- !u!212 &212320610394236984
 SpriteRenderer:
   m_ObjectHideFlags: 1

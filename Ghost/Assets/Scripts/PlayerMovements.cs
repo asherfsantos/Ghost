@@ -18,6 +18,10 @@ public class PlayerMovements : MonoBehaviour
 	private bool attack;
 	private Animator myAnimator;
 	public bool isInRealWolrd = true;
+
+	public GameObject[] realEnemies;
+
+	public bool realWorldActive = true;
 	
 	void Start () 
 	{
@@ -50,6 +54,32 @@ public class PlayerMovements : MonoBehaviour
 		//triggers attack
 		HandleAttacks();
 		ResetValues();
+		if(transform.position.x < -6.45 || transform.position.x > 6.05 || transform.position.y < -3.25 || transform.position.y > 3.75)
+		{
+			realEnemies = GameObject.FindGameObjectsWithTag("RealEnemy");
+			foreach (GameObject enemy in realEnemies)
+        	{
+				GrimDevourerScript thisScript;
+				thisScript = enemy.GetComponent<GrimDevourerScript>();
+				thisScript.attackActive = false;
+        	}
+			realWorldActive = false;
+		}
+			//disable real world
+			//enable ghost world
+		else
+		{
+			//disable ghost world
+			//enable real world
+			realEnemies = GameObject.FindGameObjectsWithTag("RealEnemy");
+			foreach (GameObject enemy in realEnemies)
+        	{
+				GrimDevourerScript thisScript;
+				thisScript = enemy.GetComponent<GrimDevourerScript>();
+				thisScript.attackActive = true;
+        	}
+			realWorldActive = true;
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
