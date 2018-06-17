@@ -10,7 +10,6 @@ public class GrimDevourerScript : EnemyBase {
     #endregion
 
     #region Private Variables
-    private GameObject player;
     private float timer;
     #endregion
 

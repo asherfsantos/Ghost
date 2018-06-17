@@ -7,6 +7,7 @@ public class SpiritWandererScript : EnemyBase {
     #region Public Variables
     public float xDir, yDir;
     public bool isChasing;
+    public int damage = 1;
     #endregion
 
     #region Private Variables
@@ -40,7 +41,7 @@ public class SpiritWandererScript : EnemyBase {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
-            PlayerManager.instance.PlayerDeath();
+            PlayerManager.instance.TakeSpiritWorldDamage(damage);
     }
     private void OnCollisionStay2D(Collision2D collision)
     {

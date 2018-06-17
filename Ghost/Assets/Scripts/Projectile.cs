@@ -36,8 +36,11 @@ public class Projectile : MonoBehaviour {
     {
         if (collision.tag == "Player")
         {
+            PlayerManager.instance.TakeRealWorldDamage(damage);
             Destroy(gameObject);
         }
+        else if (collision.tag == "Wall")
+            Destroy(gameObject);
     }
     #endregion
 
