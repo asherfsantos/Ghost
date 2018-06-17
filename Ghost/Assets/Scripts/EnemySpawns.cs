@@ -13,7 +13,7 @@ public class EnemySpawns : MonoBehaviour
 	float randomY;
 	Vector2 spawnLocation;
 	Vector2 prevSpawnLocation;
-	public float spawnRate = 2.0f;
+	public float spawnRate = 3.0f;
 	public float nextSpawn = 0.0f;
 	public float minSpaceBetween = 2.0f;
 	

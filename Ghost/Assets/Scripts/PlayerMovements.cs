@@ -17,6 +17,7 @@ public class PlayerMovements : MonoBehaviour
 	public Animator anim;
 	private bool attack;
 	private Animator myAnimator;
+	public bool isInRealWolrd = true;
 	
 	void Start () 
 	{
@@ -55,7 +56,8 @@ public class PlayerMovements : MonoBehaviour
 	{	
 		if(other.gameObject.CompareTag("Doorway"))
 		{
-			GameObject.Destroy(player);
+			isInRealWolrd = !isInRealWolrd;
+			//GameObject.Destroy(player);
 		}
 	}
 

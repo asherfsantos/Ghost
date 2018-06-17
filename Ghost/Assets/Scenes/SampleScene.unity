@@ -1491,7 +1491,7 @@ MonoBehaviour:
   portal: {fileID: 1435078376990664, guid: ba53a0239bfafcf4685fe590332f8196, type: 2}
   spawnedPortal: {fileID: 0}
   enemy: {fileID: 1737884754154018, guid: 45b4a5edb8aeba7488826401791923f9, type: 2}
-  spawnRate: 2
+  spawnRate: 7
   nextSpawn: 0
   minSpaceBetween: 1
 --- !u!4 &1681524501
@@ -1520,7 +1520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4173017727969710, guid: dbb1646f0e3beb54bb1ca58905b2598f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.937
+      value: -1.89
       objectReference: {fileID: 0}
     - target: {fileID: 4173017727969710, guid: dbb1646f0e3beb54bb1ca58905b2598f, type: 2}
       propertyPath: m_LocalPosition.z
