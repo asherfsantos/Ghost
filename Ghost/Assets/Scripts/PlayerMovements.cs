@@ -45,8 +45,10 @@ public class PlayerMovements : MonoBehaviour
         else if(moveHorizontal < 0 && facingRight)
            	Flip();
 
-		HandleInput();
-		
+		//triggers attack
+		//HandleInput();
+		//HandleAttacks();
+		//ResetValues();
 	}
 
 	void Update () 
@@ -56,9 +58,7 @@ public class PlayerMovements : MonoBehaviour
 		float vertical = Input.GetAxisRaw ("Vertical");
 		anim.SetFloat ("Speed", Mathf.Abs (horizontal) + Mathf.Abs (vertical));
 
-		//triggers attack
-		HandleAttacks();
-		ResetValues();
+		
 		//if(transform.position.x < -6.45 || transform.position.x > 6.05 || transform.position.y < -3.25 || transform.position.y > 3.75)
 		if(!coordInRealWorld(transform.position.x, transform.position.y))
 		{
@@ -86,6 +86,8 @@ public class PlayerMovements : MonoBehaviour
         	}
 			realWorldActive = true;
 		}
+		HandleInput();
+		//ResetValues();
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
@@ -112,26 +114,40 @@ public class PlayerMovements : MonoBehaviour
         transform.localScale = theScale;
     }
 	
+	private void HandleInput()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			attack = true;
+			HandleAttacks();
+		}
+		if(Input.GetKeyUp(KeyCode.Space))
+		{
+			attack = false;
+			HandleAttacks();
+		}
+		//ResetValues();
+	}
+
 	private void HandleAttacks()
 	{
 		if (attack)
 		{
 			myAnimator.SetTrigger("Attack");
 		}
-	}
-
-	private void HandleInput()
-	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		else
 		{
-			attack = true;
+			myAnimator.ResetTrigger("Attack");
 		}
+
 	}
 
 	private void ResetValues()
 	{
 		attack = false;
+		myAnimator.ResetTrigger("Attack");
 	}
+
 	private bool coordInRealWorld(float x, float y)
 	{
 		if((x > realLeft && x < realRight) && (y > realLower && y < realUpper))

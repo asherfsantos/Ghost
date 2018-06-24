@@ -9,10 +9,14 @@ public class GrimDevourerScript : EnemyBase {
     public GameObject projectile;
     public Animator anim;
     public bool attackActive = true;
-    #endregion
+    public Transform target;
+    public int moveSpeed;
+    public int rotationSpeed;
+    #endregion 
 
     #region Private Variables
     private float timer;
+    private Transform myTransform;
     #endregion
 
     #region Monobehavior Callbacks
@@ -20,12 +24,18 @@ public class GrimDevourerScript : EnemyBase {
     void Start()
     {
         timer = 0;
+        GameObject go = GameObject.FindGameObjectWithTag("Player");
+        target = go.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
         Shoot();
+        myTransform.position += (target.position - myTransform.position).normalized * moveSpeed * Time.deltaTime;
+
+        Vector3 dir = target.position - myTransform.position;
+         
     }
 
     private void Shoot()
