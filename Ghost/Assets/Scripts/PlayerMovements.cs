@@ -22,6 +22,11 @@ public class PlayerMovements : MonoBehaviour
 	public GameObject[] realEnemies;
 
 	public bool realWorldActive = true;
+
+	public float realLeft = -0.5f;
+	public float realRight = 5.0f;
+	public float realUpper = 3.0f;
+	public float realLower = -2.5f;
 	
 	void Start () 
 	{
@@ -54,7 +59,8 @@ public class PlayerMovements : MonoBehaviour
 		//triggers attack
 		HandleAttacks();
 		ResetValues();
-		if(transform.position.x < -6.45 || transform.position.x > 6.05 || transform.position.y < -3.25 || transform.position.y > 3.75)
+		//if(transform.position.x < -6.45 || transform.position.x > 6.05 || transform.position.y < -3.25 || transform.position.y > 3.75)
+		if(!coordInRealWorld(transform.position.x, transform.position.y))
 		{
 			realEnemies = GameObject.FindGameObjectsWithTag("RealEnemy");
 			foreach (GameObject enemy in realEnemies)
@@ -86,9 +92,11 @@ public class PlayerMovements : MonoBehaviour
 	{	
 		if(other.gameObject.CompareTag("Doorway"))
 		{
-			isInRealWolrd = !isInRealWolrd;
+			//isInRealWolrd = !isInRealWolrd;
+			toggleGravity();
 			GameObject thePlayer = GameObject.Find("Player");
 			PlayerManager playerScript = thePlayer.GetComponent<PlayerManager>();
+			
 			while(playerScript.realWorldHealth < 3)
         		playerScript.realWorldHealth++;
 			
@@ -124,5 +132,21 @@ public class PlayerMovements : MonoBehaviour
 	{
 		attack = false;
 	}
-
+	private bool coordInRealWorld(float x, float y)
+	{
+		if((x > realLeft && x < realRight) && (y > realLower && y < realUpper))
+			return true;
+		else
+			return false;
+	}
+	
+	private void toggleGravity()
+	{
+		GameObject thePlayer = GameObject.Find("Player");
+		Rigidbody2D playerPhysics = thePlayer.GetComponent<Rigidbody2D>();
+			if(isInRealWolrd)
+				playerPhysics.gravityScale = 1;
+			else
+				playerPhysics.gravityScale = 0;
+	}
 }
