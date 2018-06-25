@@ -35,7 +35,7 @@ public class SpiritWandererScript : EnemyBase {
             float step = movementSpeed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, PlayerManager.instance.transform.position, step);
         }
-        else
+        else 
             transform.Translate(new Vector3(xDir, yDir, 0)*Time.deltaTime*movementSpeed);
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -63,6 +63,5 @@ public class SpiritWandererScript : EnemyBase {
         if (collision.tag == "Player")
             isChasing = false;
     }
-
     #endregion
 }

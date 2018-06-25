@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61270469076219416}
   - component: {fileID: 50910642705436220}
   - component: {fileID: 58983010113375066}
+  - component: {fileID: 95083099142912926}
   m_Layer: 0
   m_Name: SpiritWanderer
   m_TagString: Untagged
@@ -104,6 +105,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.873, y: 0.855}
   m_EdgeRadius: 0
+--- !u!95 &95083099142912926
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530455374546080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cda292f06236ea4fb87d2113098ff1f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114774756789016350
 MonoBehaviour:
   m_ObjectHideFlags: 1

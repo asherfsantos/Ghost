@@ -9,14 +9,14 @@ public class GrimDevourerScript : EnemyBase {
     public GameObject projectile;
     public Animator anim;
     public bool attackActive = true;
-    public Transform target;
-    public int moveSpeed;
-    public int rotationSpeed;
+    public float xDir, yDir;
+    public bool isChasing;
+    public int damage = 1;
     #endregion 
 
     #region Private Variables
     private float timer;
-    private Transform myTransform;
+
     #endregion
 
     #region Monobehavior Callbacks
@@ -24,18 +24,16 @@ public class GrimDevourerScript : EnemyBase {
     void Start()
     {
         timer = 0;
-        GameObject go = GameObject.FindGameObjectWithTag("Player");
-        target = go.transform;
+        isChasing = false;
+        xDir = UnityEngine.Random.Range(-1f, 1f);
+        yDir = UnityEngine.Random.Range(-1f, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
         Shoot();
-        myTransform.position += (target.position - myTransform.position).normalized * moveSpeed * Time.deltaTime;
-
-        Vector3 dir = target.position - myTransform.position;
-         
+        Movement();
     }
 
     private void Shoot()
@@ -57,22 +55,39 @@ public class GrimDevourerScript : EnemyBase {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-            PlayerManager.instance.PlayerDeath();
+      if (collision.gameObject.tag == "Player")
+            PlayerManager.instance.TakeSpiritWorldDamage(damage);;
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
+        xDir = UnityEngine.Random.Range(-1f, 1f);
+        yDir = UnityEngine.Random.Range(-1f, 1f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+          if(collision.tag == "Player")
+            isChasing = true;
+        else
+        {
+            xDir = UnityEngine.Random.Range(-1f, 1f);
+            yDir = UnityEngine.Random.Range(-1f, 1f);
+        }  
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.tag == "Player")
+            isChasing = false;
     }
 
     protected override void Movement()
     {
-        //Grim Devourer does not move
+      if(isChasing)
+        {
+            float step = movementSpeed * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, PlayerManager.instance.transform.position, step);
+        }
+        else
+            transform.Translate(new Vector3(xDir, yDir, 0)*Time.deltaTime*movementSpeed);
     }
 
     #endregion
