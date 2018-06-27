@@ -12,6 +12,7 @@ TagManager:
   - Doorway
   - Spawn Portal
   - RealEnemy
+  - Attack
   layers:
   - Default
   - TransparentFX

@@ -27,6 +27,9 @@ public class PlayerMovements : MonoBehaviour
 	public float realRight = 5.0f;
 	public float realUpper = 3.0f;
 	public float realLower = -2.5f;
+
+	public Vector2 attackPosition;
+	public GameObject attackCollider;
 	
 	void Start () 
 	{
@@ -104,6 +107,7 @@ public class PlayerMovements : MonoBehaviour
 			
 			//GameObject.Destroy(player);
 		}
+		//if(other.gameObject.CompareTag(""))
 	}
 
 	void Flip ()
@@ -120,6 +124,18 @@ public class PlayerMovements : MonoBehaviour
 		{
 			attack = true;
 			HandleAttacks();
+			attackPosition.x = transform.position.x + 0.5f;
+			attackPosition.y = transform.position.y;
+			GameObject attackInstance;
+			if(facingRight)
+				attackInstance = Instantiate(attackCollider, attackPosition, Quaternion.identity);
+			else
+			{
+				attackPosition.x -= 1.0f;
+				attackInstance = Instantiate(attackCollider, attackPosition, Quaternion.identity);
+			}
+			Destroy(attackInstance,0.5f);
+
 		}
 		if(Input.GetKeyUp(KeyCode.Space))
 		{
@@ -139,6 +155,8 @@ public class PlayerMovements : MonoBehaviour
 		{
 			myAnimator.ResetTrigger("Attack");
 		}
+		
+		
 
 	}
 
